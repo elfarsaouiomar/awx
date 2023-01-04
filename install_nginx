@@ -1,0 +1,12 @@
+---
+  tasks:
+  - name: Install nginx
+    package:
+      name: nginx
+      state: present
+   
+  - name: Start nginx
+    service:
+      name: nginx
+      state: started
+      enabled: yes
